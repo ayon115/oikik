@@ -1,0 +1,9 @@
+{
+  "name": "odin",
+  "version": "1.3.0",
+  "author": {
+    "name": "Ghost Foundation",
+    "email": "hello@ghost.org",
+    "url": "https://ghost.org"
+  }
+}
