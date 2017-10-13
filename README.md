@@ -1,6 +1,6 @@
 # Drogon
 
-![Ghost version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
+![Ghost version](https://img.shields.io/badge/Ghost-1.1.1-brightgreen.svg?style=flat-square)
 
 A Clean & Modern theme for Ghost made for professionals.
 
