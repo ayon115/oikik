@@ -1,9 +1,24 @@
 {{#if @blog.navigation}}
-    <div class="menu">
-        <ul>
-            {{#foreach navigation}}
-                <li class="nav-{{slug}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-            {{/foreach}}
-        </ul>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
     </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+            {{#foreach navigation}}
+                <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+            {{/foreach}}
+      </ul>
+    </div>
+  </div>
+</nav>
+    
 {{/if}}
+
+
