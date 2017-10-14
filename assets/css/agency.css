@@ -124,37 +124,53 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover; }
   header.masthead .intro-text {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 22px;
-      font-style: italic;
+      font-size: 19px;
+      font-style: normal;
+      color: rgba(0, 0, 0, 0.6);
       line-height: 22px;
+      margin-top: 1px;
       margin-bottom: 25px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Montserrat', 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 50px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 50px;
-      margin-bottom: 25px;
+      margin-top: 15px;
+      margin-bottom: 1px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
+    
+    header.masthead .intro-text  .profile-photo {
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+    .profile-photo img {
+      width: 200px;
+      height: 200px;
+      border: 5px solid white; }
+        
+    
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-top: 150px;
+    padding-bottom: 110px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 40px;
-      font-style: italic;
+      font-size: 20px;
+      font-style: normal;
       line-height: 40px;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 1px;
       margin-bottom: 25px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Montserrat', 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 75px;
+      font-size: 50px;
       font-weight: 700;
       line-height: 75px;
-      margin-bottom: 50px;
+      margin-bottom: 1px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } }
 
@@ -500,6 +516,7 @@ ul.social-buttons {
   ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
+    margin-left: 3px;
     display: block;
     width: 40px;
     height: 40px;
@@ -509,9 +526,9 @@ ul.social-buttons {
     color: white;
     border-radius: 100%;
     outline: none;
-    background-color: #222222; }
+    background-color: rgba(0, 0, 0, 0.6); }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
+      background-color: black; }
 
 .text-primary {
   color: #fed136 !important; }
