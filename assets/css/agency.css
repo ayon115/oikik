@@ -69,32 +69,46 @@ body {
   -webkit-tap-highlight-color: #fed136; }
 
 #mainNav {
-  background-color: white; }
-  #mainNav .navbar-toggler {
-    font-size: 14px;
-    right: 0;
-    padding: 13px;
-    text-transform: uppercase;
-    color: white;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  #mainNav .navbar-brand {
-    color: rgba(0, 0, 0, 0.7);
-    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
-    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: black; }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 90%;
-    font-weight: 400;
-    padding: 0.75em 0;
-    letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.7);
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-    #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #000000; }
+  background-color: white; 
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase; 
+}
+
+#mainNav .navbar-brand {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; 
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: black; 
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: none;
+  color: #000000; 
+}
 
 @media (min-width: 992px) {
   #mainNav {
