@@ -17,36 +17,23 @@
 
     <h2>{{title}}</h2>
     {{content}}
-    {{> "social_share"}}
 
     <div class="row">
         <div class="col-md-12">
             {{author}}
         </div>
     </div>
-
-    <footer class="post-footer"></footer>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                {{#next_post}}
-                <a class="read-next-story {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
-                    <h2>{{title}}</h2>
-                    <p>{{excerpt words="19"}}&hellip;</p>
-                </a>
-                {{/next_post}}
-            </div>
-
-            <div class="col-md-6">
-                {{#prev_post}}
-                    <a class="read-next-story prev {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
-                        <h2>{{title}}</h2>
-                        <p>{{excerpt words="19"}}&hellip;</p>
-                    </a>
-                {{/prev_post}}
-            </div>
-        </div>
+    <div class="row">
+        <h2>Read my recent articles:</h2>
+        <br>
+        {{#next_post}}  
+            <a href="{{url}}"><h6>{{title}}</h6></a>
+            <br>
+        {{/next_post}}
+        {{#prev_post}}   
+            <a href="{{url}}"><h6>{{title}}</h6></a>
+        {{/prev_post}}      
     </div>
 
     <div class="post-comments">

@@ -30,6 +30,8 @@ h6 {
   color: rgb(0, 0, 0);
   font-weight: 700;
   line-height: 1.1;
+  margin-top: 25px;
+  margin-bottom: 10px;
   font-family: 'Lato', 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 

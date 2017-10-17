@@ -102,57 +102,13 @@
 }
 
 #single-post {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
 } #single-post h2 {
     padding-top: 10px;
     padding-bottom: 20px;
 }  
-
-
-/* Create some space to the right for the share links */
-.post-footer .author {
-    margin-right: 180px;
-}
-
-.post-footer h4 a {
-    color: #2e2e2e;
-    text-decoration: none;
-}
-
-.post-footer h4 a:hover {
-    text-decoration: underline;
-}
-
-/* Drop the share links in the space to the right.
-   Doing it like this means it's easier for the author bio
-   to be flexible at smaller screen sizes while the share
-   links remain at a fixed width the whole time */
-.post-footer .share {
-    position: absolute;
-    top: 6rem;
-    right: 0;
-    width: 140px;
-}
-
-.post-footer .share a {
-    font-size: 1.8rem;
-    display: inline-block;
-    margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
-    text-decoration: none;
-}
-
-.post-footer .share .icon-twitter:hover {
-    color: #55acee;
-}
-.post-footer .share .icon-facebook:hover {
-    color: #3b5998;
-}
-.post-footer .share .icon-google-plus:hover {
-    color: #dd4b39;
-}
-
 
 .site-footer {
     position: relative;
@@ -187,11 +143,37 @@
     }
 }
 
-/* Clears shit */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.post-comments {
+    padding-top: 20px;
 }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
+
+#read-next {
+    position: relative;
+}
+
+#read-next .link {
+    background-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+.next-title {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.next-title-p {
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.no-cover {
+    background-color: #555555;
+}
