@@ -1,0 +1,27 @@
+{{#author}}
+
+    <div class="post-card-container" style="height:auto;padding:20px;">
+        <div class="row">
+            <div class="col-md-2" style="text-align:center;">
+                {{#if profile_image}}
+                    <img class="img-fuild rounded-circle" width="100" height="100" src="{{img_url profile_image absolute="true"}}" />
+                {{else}}
+                    <img class="img-fuild rounded-circle" width="100" height="100" src="{{asset "img/def_avatar.jpg"}}" />
+                {{/if}}
+            </div>
+            <div class="col-md-10">
+                <h4 style="margin-top:0px;"><a href="{{url}}">{{name}}</a></h4>
+                {{#if bio}}
+                    <p>{{bio}}</p>
+                {{else}}
+                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                {{/if}}
+                <div class="author-meta">
+                    {{#if location}}<h6>{{location}}</h6>{{/if}}
+                    {{#if website}}<a href="{{website}}">{{website}}</a>{{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{{/author}}

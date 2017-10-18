@@ -20,20 +20,31 @@
 
     <div class="row">
         <div class="col-md-12">
-            {{author}}
+            {{> author-small}}
         </div>
     </div>
     
-    <div class="row">
-        <h2>Read my recent articles:</h2>
-        <br>
-        {{#next_post}}  
-            <a href="{{url}}"><h6>{{title}}</h6></a>
-            <br>
-        {{/next_post}}
-        {{#prev_post}}   
-            <a href="{{url}}"><h6>{{title}}</h6></a>
-        {{/prev_post}}      
+    <div>
+        <h3>My recent articles:</h3>
+        <div class="row">
+
+            <div class="col-md-6">
+                {{#prev_post}}
+                    <h4>Previous Post</h4>
+                    <br/>
+                    {{> post-card}}
+                {{/prev_post}}
+            </div>
+
+            <div class="col-md-6">
+                {{#next_post}} 
+                    <h4>Next Post</h4>
+                    <br/> 
+                    {{> post-card}}
+                {{/next_post}}
+            </div>
+
+        </div>      
     </div>
 
     <div class="post-comments">

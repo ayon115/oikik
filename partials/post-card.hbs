@@ -1,35 +1,19 @@
-<div class="blog-card-container">
-    <img class="img-fluid" src="{{feature_image}}" alt="">
-    <div class="blog-card">
-        <h2>{{title}}</h2>
-        <p>{{excerpt words="30"}} ... </p>
-        <div class="row">
-            {{#if author.profile_image}}
-                <div class="col-sm-2 col-xs-2">
-                    <img class="img-fuild rounded-circle" style="width:40px;height:40px;" src="{{author.profile_image}}" alt="{{author.name}}" nopin="nopin" />
-                </div>
-            {{else}}
-                <div class="col-sm-2 col-xs-2">
-                    <img class="img-fuild rounded-circle" style="width:40px;height:40px;" src="{{asset "img/def_avatar.jpg"}}" alt="" />
-                </div>
-            {{/if}}
-
-            <div class="col-sm-10 col-xs-10 author">
-                {{author}}
+<div class="post-card-container">
+    
+    <a href="{{url}}" >
+        <div class="row next">
+            <div class="col-md-4">
+                <img class="img-thumbnail" src="{{feature_image}}" alt="">
+            </div>
+            <div class="col-md-8 next-post">
+                <h2>{{title}}</h2>
+                <p>{{excerpt words="15"}} ... </p>
                 <div class="time-post">
                     <i class="fa fa-calendar-o" aria-hidden="true"></i>
                     <time class="post-date" datetime="{{date format='YYYY-MMM-DD'}}">{{date format="DD MMM YYYY"}}</time>
                 </div>
             </div>
         </div>
-        <div class="tags">
-            {{#foreach tags}} 
-                <a href="{{url}}">{{name}}</a>
-            {{/foreach}}
-        </div>
-        
-    </div>
-    <div class="read-more">
-        <a href="{{url}}">READ MORE</a>
-    </div>
+    </a>
+   
 </div>
