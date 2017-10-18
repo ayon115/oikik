@@ -6,25 +6,17 @@
 {{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
 
-<header class="main-header post-head {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if feature_image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}"> Home</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/"> Subscribe</a>
-    </nav>
-    {{navigation}}
-</header>
+<section id="single-post">
+    
+    {{#if feature_image}}
+        <div class="container">
+            <img class=".img-responsive feature-image" src={{feature_image}} alt="" />
+        </div>
+    {{/if}}
 
-<main class="content" role="main">
-    <article class="{{post_class}}">
+    <h2>{{title}}</h2>
+    {{content}}
 
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
-        </header>
+</section>
 
-        <section class="post-content">
-            {{content}}
-        </section>
-
-    </article>
-</main>
 {{/post}}
