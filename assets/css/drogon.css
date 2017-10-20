@@ -363,3 +363,9 @@ iframe, .fluid-width-video-wrapper {
 .fluid-width-video-wrapper iframe {
     margin: 0;
 }
+
+#pagination {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 18px;
+}

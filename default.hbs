@@ -80,23 +80,6 @@
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/rrssb.min.js"}}"></script>
 
-    {{! Activate the social sharing buttons with a suitable post title/desricption/link}}
-    <script type="text/javascript">
-        jQuery(document).ready(function($) {
-
-            $('.rrssb-buttons').rrssb({
-                // required:
-                title: '{{post.title}}',
-                url: '{{@blog.url}}{{post.url}}',
-
-                // optional:
-                 description: '{{post.title}}',
-                // emailBody: 'Usually email body is just the description + url, but you can customize it if you want'
-            });
-
-        });
-    </script>
-
     {{! Activate GoogleAnalytics }}
     <script>
         // TO ACTIVATE ADD var ga_id = "your_ga_id" to ghost code injection header
