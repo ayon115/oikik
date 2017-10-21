@@ -6,7 +6,7 @@ Oikik is a Clean & Modern looking theme for Ghost made for professionals. It's p
 
 ### Demo
 
-I developed this theme to use in my own website. So, a Demo or Production site whatever you call it, That can be found in my  ![Personal Site](https://www.iayon.com/)
+I developed this theme to use in my own website. So, a Demo or Production site whatever you call it, That can be found in my  [Personal Site](https://www.iayon.com/)
 
 ## How to use
 
