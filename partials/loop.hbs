@@ -7,6 +7,7 @@
                 <div class="blog-card-container">
                     <div class="blog-card">
 
+                        
                         <div class="row">
                             <div class="col-md-4">
                                 {{#if feature_image}}
@@ -18,8 +19,10 @@
                                 
                             </div>
                             <div class="col-md-8">
-                                <h2>{{title}}</h2>
-                                <p>{{excerpt words="50"}} ... </p>
+                                <a href="{{url}}" style="text-decoration:none;">
+                                    <h2>{{title}}</h2>
+                                    <p>{{excerpt words="50"}} ... </p>
+                                </a>
                                 <div class="time-post">
                                     <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                     <time class="post-date" datetime="{{date format='YYYY-MMM-DD'}}">{{date format="DD MMM YYYY h:mm A"}}</time>
@@ -31,7 +34,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
