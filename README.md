@@ -6,7 +6,7 @@ Oikik is a Clean & Modern looking theme for Ghost made for professionals. It's p
 
 ### Demo
 
-I developed this theme to use in my own website. So, a Demo or Production site whatever you call it, That can be found in my ![Personal Site](https://www.iayon.com)
+I developed this theme to use in my own website. So, a Demo or Production site whatever you call it, That can be found in my  ![Personal Site](https://www.iayon.com/)
 
 ## How to use
 
@@ -47,7 +47,7 @@ Adding the portfolio feature is not supported by Ghost. So, It's a bit tricky & 
 Here are the steps: 
 
 + Go to 'Designs' Tab and Add a Navigation Item there. If you follow my setup, then just make it like the image below. 
-![Adding Navigation](https://imgur.com/a/zOlAk)
+<img width="965" alt="Adding Navigation" src="https://user-images.githubusercontent.com/2864267/31852995-3ed8913c-b6a3-11e7-9e83-7b05fa084695.png">
 
 Now if you want to use different texts, Then, For the Menu Item i,e "Projects" there's no problem, You can use whatever you want there Like "Portfolio", "Works" etc. But You have to be cautious about the URL. I used "works" here which corresponds to a page template called page-works.hbs . So, if you set URL to /portfolio , then you have to change that file name to page-portfolio.hbs . 
 
