@@ -97,7 +97,7 @@
 .feature-image {
     width: 100%;
     box-sizing: border-box;
-    max-height: 400px;
+    max-height: 500px;
     height: auto;
 }
 
@@ -308,8 +308,8 @@ mark {
 
 code, tt {
     padding: 1px 3px;
-    font-family: Inconsolata, monospace, sans-serif;
-    font-size: 1em;
+    font-family: Monaco, Inconsolata, monospace, sans-serif;
+    font-size: 15px;
     white-space: pre-wrap;
     border: #E3EDF3 1px solid;
     background: #F7FAFB;
@@ -322,8 +322,8 @@ pre {
     margin: 0 0 1em 0;
     width: 100%;
     padding: 10px;
-    font-family: Inconsolata, monospace, sans-serif;
-    font-size: 1.1em;
+    font-family: Monaco, Inconsolata, monospace, sans-serif;
+    font-size: 15px;
     line-height: 22px;
     white-space: pre;
     overflow: auto;
@@ -332,7 +332,7 @@ pre {
 }
 
 pre code, pre tt {
-    font-size: 1.1em;
+    font-size: 1em;
     white-space: pre-wrap;
     background: transparent;
     border: none;
