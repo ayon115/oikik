@@ -1,0 +1,38 @@
+{{!< default}}
+
+<section id="single-post">
+    {{#post}}
+        {{content}}
+    {{/post}}
+
+    <div class="row" style="text-align:center;display: flow-root;">
+        <div class="btn-group" id="filters" style="margin-bottom: 50px;margin-top: 30px;">
+            <button type="button" class="btn btn-primary active" data-filter="*">All</button>
+            <button type="button" class="btn btn-primary" data-filter=".ios">iOS</button>
+            <button type="button" class="btn btn-primary" data-filter=".android">Android</button>
+            <button type="button" class="btn btn-primary" data-filter=".web">Web</button>
+        </div>
+    </div>
+
+    <div class="grid row">
+            <div class="grid-sizer"></div>
+            
+            {{#get "posts" limit="all" include="tags" filter="tag:work+page:true"}}
+            {{#foreach posts}}
+
+                <div class="col-md-4 {{tags separator=" " autolink="false"}}">
+                    <a href="/{{slug}}" style="text-decoration:none;">
+                        <img src="{{feature_image}}" />
+                        <h2 class="name" style="padding:10px; text-align:center;" >{{title}}</h2>
+                    </a>
+                </div>
+
+            {{/foreach}}
+            {{/get}}
+    </div>
+
+    
+
+</section>
+
+
